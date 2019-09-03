@@ -9,3 +9,7 @@
 <% end %>
 
 <a href="/tweets/new">Create a new tweet!</a>
+
+<% if flash.has?(:error) %>
+  <%= flash[:error] %>
+<% end %>
